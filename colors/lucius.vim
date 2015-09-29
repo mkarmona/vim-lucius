@@ -534,7 +534,7 @@ if s:style == "light"
     hi CursorLineNr guifg=#626262   guibg=#dadada
     hi FoldColumn                   guibg=#bcbcbc
     hi Folded                       guibg=#bcbcbc
-    hi LineNr       guifg=#9e9e9e   guibg=#dadada
+    hi LineNr       guifg=#9e9e9e   guibg=bg
     hi PmenuSel                     guibg=#afd7ff
     hi SignColumn                   guibg=#d0d0d0
     hi StatusLineNC guifg=#dadada
@@ -573,7 +573,7 @@ else
     hi CursorLineNr guifg=#9e9e9e   guibg=#444444
     hi FoldColumn                   guibg=#4e4e4e
     hi Folded                       guibg=#4e4e4e
-    hi LineNr       guifg=#626262   guibg=#444444
+    hi LineNr       guifg=#626262   guibg=bg
     hi PmenuSel                     guibg=#005f87
     hi SignColumn                   guibg=#4e4e4e
     hi StatusLineNC guifg=#4e4e4e
