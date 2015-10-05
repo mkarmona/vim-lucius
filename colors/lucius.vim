@@ -302,33 +302,33 @@ hi Normal gui=none cterm=none term=none
 
 if s:style == "light"
     if s:contrast == "high"
-        hi Normal       guifg=#000000
+        hi Normal       guifg=#3f4957
     elseif s:contrast == "low"
-        hi Normal       guifg=#626262
+        hi Normal       guifg=#3f4957
     else
-        hi Normal       guifg=#444444
+        hi Normal       guifg=#3f4957
     endif
 else
     if s:contrast == "high"
-        hi Normal       guifg=#eeeeee
+        hi Normal       guifg=#e9e4e3
     elseif s:contrast == "low"
-        hi Normal       guifg=#bcbcbc
+        hi Normal       guifg=#e9e4e3
     else
-        hi Normal       guifg=#d7d7d7
+        hi Normal       guifg=#e9e4e3
     endif
 endif
 
 if s:style == "light"
     if s:contrast_bg == "high"
-        hi Normal                       guibg=#ffffff
+        hi Normal                       guibg=#e9e4e3
     else
-        hi Normal                       guibg=#eeeeee
+        hi Normal                       guibg=#e9e4e3
     endif
 else
     if s:contrast_bg == "high"
-        hi Normal                       guibg=#121212
+        hi Normal                       guibg=#3f4957
     else
-        hi Normal                       guibg=#303030
+        hi Normal                       guibg=#3f4957
     endif
 endif
 
