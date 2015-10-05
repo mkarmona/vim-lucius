@@ -173,7 +173,7 @@ endif
 
 let s:color_map = {
     \ 'bg': 'bg', 'fg': 'fg', 'NONE': 'NONE',
-    \ '#000000':  '16', '#00005f':  '17', '#000087':  '18', '#0000af':  '19',
+    \ '#3f4957':  '16', '#00005f':  '17', '#000087':  '18', '#0000af':  '19',
     \ '#0000d7':  '20', '#0000ff':  '21', '#005f00':  '22', '#005f5f':  '23',
     \ '#005f87':  '24', '#005faf':  '25', '#005fd7':  '26', '#005fff':  '27',
     \ '#008700':  '28', '#00875f':  '29', '#008787':  '30', '#0087af':  '31',
@@ -216,7 +216,7 @@ let s:color_map = {
     \ '#d787d7': '176', '#d787ff': '177', '#d7af00': '178', '#d7af5f': '179',
     \ '#d7af87': '180', '#d7afaf': '181', '#d7afd7': '182', '#d7afff': '183',
     \ '#d7d700': '184', '#d7d75f': '185', '#d7d787': '186', '#d7d7af': '187',
-    \ '#d7d7d7': '188', '#d7d7ff': '189', '#d7ff00': '190', '#d7ff5f': '191',
+    \ '#e9e4e3': '188', '#d7d7ff': '189', '#d7ff00': '190', '#d7ff5f': '191',
     \ '#d7ff87': '192', '#d7ffaf': '193', '#d7ffd7': '194', '#d7ffff': '195',
     \ '#ff0000': '196', '#ff005f': '197', '#ff0087': '198', '#ff00af': '199',
     \ '#ff00d7': '200', '#ff00ff': '201', '#ff5f00': '202', '#ff5f5f': '203',
@@ -228,11 +228,11 @@ let s:color_map = {
     \ '#ffd7d7': '224', '#ffd7ff': '225', '#ffff00': '226', '#ffff5f': '227',
     \ '#ffff87': '228', '#ffffaf': '229', '#ffffd7': '230', '#ffffff': '231',
     \ '#080808': '232', '#121212': '233', '#1c1c1c': '234', '#262626': '235',
-    \ '#303030': '236', '#3a3a3a': '237', '#444444': '238', '#4e4e4e': '239',
-    \ '#585858': '240', '#626262': '241', '#6c6c6c': '242', '#767676': '243',
+    \ '#303030': '236', '#3a3a3a': '237', '#3f4957': '238', '#4e4e4e': '239',
+    \ '#585858': '240', '#3f4957': '241', '#6c6c6c': '242', '#767676': '243',
     \ '#808080': '244', '#8a8a8a': '245', '#949494': '246', '#9e9e9e': '247',
     \ '#a8a8a8': '248', '#b2b2b2': '249', '#bcbcbc': '250', '#c6c6c6': '251',
-    \ '#d0d0d0': '252', '#dadada': '253', '#e4e4e4': '254', '#eeeeee': '255',
+    \ '#d0d0d0': '252', '#dadada': '253', '#e4e4e4': '254', '#e9e4e3': '255',
     \ }
 
 
@@ -449,8 +449,8 @@ if s:style == "light"
         hi Todo         guifg=#875f00   guibg=#ffffaf
     endif
 else
-    hi CursorColumn                 guibg=#444444
-    hi CursorLine                   guibg=#444444
+    hi CursorColumn                 guibg=#3f4957
+    hi CursorLine                   guibg=#3f4957
     hi IncSearch    guifg=bg
     hi MatchParen   guifg=fg        guibg=#87af00
     hi Search       guifg=bg
@@ -531,7 +531,7 @@ hi TabLineSel   guifg=fg
 hi WildMenu     guifg=fg
 if s:style == "light"
     hi ColorColumn                  guibg=#e4e4e4
-    hi CursorLineNr guifg=#626262   guibg=#dadada
+    hi CursorLineNr guifg=#3f4957   guibg=#dadada
     hi FoldColumn                   guibg=#bcbcbc
     hi Folded                       guibg=#bcbcbc
     hi LineNr       guifg=#9e9e9e   guibg=bg
@@ -545,7 +545,7 @@ if s:style == "light"
         hi FoldColumn   guifg=#808080
         hi Folded       guifg=#808080
         hi Pmenu                        guibg=#9e9e9e
-        hi PmenuSbar    guifg=#9e9e9e   guibg=#626262
+        hi PmenuSbar    guifg=#9e9e9e   guibg=#3f4957
         hi PmenuThumb                   guibg=#9e9e9e
         hi SignColumn   guifg=#808080
         hi StatusLine                   guibg=#9e9e9e
@@ -555,12 +555,12 @@ if s:style == "light"
         hi TabLineSel                   guibg=#afd7ff
         hi VertSplit                    guibg=#9e9e9e
     else
-        hi FoldColumn   guifg=#626262
-        hi Folded       guifg=#626262
+        hi FoldColumn   guifg=#3f4957
+        hi Folded       guifg=#3f4957
         hi Pmenu                        guibg=#808080
-        hi PmenuSbar    guifg=#808080   guibg=#444444
+        hi PmenuSbar    guifg=#808080   guibg=#3f4957
         hi PmenuThumb                   guibg=#9e9e9e
-        hi SignColumn   guifg=#626262
+        hi SignColumn   guifg=#3f4957
         hi StatusLine                   guibg=#808080
         hi StatusLineNC                 guibg=#808080
         hi TabLine                      guibg=#808080
@@ -570,15 +570,15 @@ if s:style == "light"
     endif
 else
     hi ColorColumn                  guibg=#3a3a3a
-    hi CursorLineNr guifg=#9e9e9e   guibg=#444444
+    hi CursorLineNr guifg=#9e9e9e   guibg=#3f4957
     hi FoldColumn                   guibg=#4e4e4e
     hi Folded                       guibg=#4e4e4e
-    hi LineNr       guifg=#626262   guibg=bg
+    hi LineNr       guifg=#3f4957   guibg=bg
     hi PmenuSel                     guibg=#005f87
     hi SignColumn                   guibg=#4e4e4e
     hi StatusLineNC guifg=#4e4e4e
     hi TabLineFill  guifg=#4e4e4e
-    hi VertSplit    guifg=#626262
+    hi VertSplit    guifg=#3f4957
     hi WildMenu                     guibg=#005f87
     if s:contrast == "low"
         hi FoldColumn   guifg=#a8a8a8
